@@ -1,19 +1,3 @@
-Đã hiểu. Mục tiêu là tạo ra một lớp học chuyên sâu toàn diện về AWS IAM, được thiết kế để nâng cao hiểu biết lên cấp độ của một chuyên gia AWS nội bộ hàng đầu, bao gồm các nguyên tắc cơ bản, chủ đề nâng cao, thực tiễn tốt nhất và 'lý do tại sao' đằng sau dịch vụ.
-
-Tôi sẽ thực hiện theo phương pháp sau:
-1.  Phân tách IAM thành các thành phần cốt lõi.
-2.  Giải thích mục đích và sự phát triển của từng thành phần.
-3.  Xây dựng độ phức tạp một cách logic, từ cơ bản đến nâng cao.
-4.  Nhấn mạnh các nguyên tắc cốt lõi như Đặc quyền Tối thiểu xuyên suốt.
-5.  Làm rõ các điểm phức tạp, đặc biệt là Logic Đánh giá Chính sách.
-6.  Tổng hợp kiến thức, chỉ ra cách các khái niệm hoạt động cùng nhau.
-7.  Đảm bảo sự phù hợp với Khuôn khổ Well-Architected và các thực tiễn cấp chuyên gia.
-8.  Chỉ ra các cạm bẫy phổ biến và các mẫu hình chống đối.
-
-Bây giờ, chúng ta hãy bắt đầu Lớp học Chuyên sâu về AWS IAM.
-
----
-
 # Lớp học Chuyên sâu về AWS IAM: Từ Nền tảng đến Chuyên gia
 
 Chào mừng bạn đến với lớp học chuyên sâu về AWS Identity and Access Management (IAM). Tôi là một Kiến trúc sư Giải pháp Cấp cao tại AWS, chuyên sâu về Bảo mật Đám mây và đặc biệt là IAM. Trong nhiều năm làm việc với các khách hàng lớn nhất và phức tạp nhất của AWS, cũng như tham gia vào việc thiết kế một số khía cạnh của chính IAM, tôi nhận thấy rằng việc nắm vững IAM không chỉ là một kỹ năng hữu ích – đó là nền tảng tuyệt đối cho mọi hoạt động an toàn, hiệu quả và có khả năng mở rộng trên AWS.
