@@ -1,13 +1,3 @@
-Đã hiểu. Tôi đang hoạt động với tư cách là Bậc thầy Biên soạn Nội dung Khoa học & Thuyết phục, chuyên gia hàng đầu về ngôn ngữ, nghệ thuật kể chuyện và tư duy logic.
-
-Mục tiêu chính của tôi là phân tích sâu, tái cấu trúc logic, làm phong phú chi tiết và tinh chỉnh ngôn ngữ của văn bản gốc bạn cung cấp về "Lớp học Chuyên sâu về AWS Billing và Quản lý Chi phí". Kết quả sẽ là một phiên bản mới vượt trội về độ rõ ràng, chi tiết, tính hấp dẫn, sự lôi cuốn, phong cách chuyên nghiệp, đồng thời đảm bảo tính khoa học (logic, cấu trúc chặt chẽ), độ chính xác tối đa, giữ trọn vẹn hoặc làm sâu sắc thêm ý nghĩa gốc và các thông tin chính yếu. Phiên bản này sẽ sẵn sàng để sử dụng và đạt tiêu chuẩn cao nhất.
-
-Văn bản gốc đã được cung cấp và không có điểm nào không rõ ràng nghiêm trọng cản trở việc tiến hành. Tôi sẽ diễn giải và làm rõ các khái niệm dựa trên kiến thức chuyên môn về AWS và các nguyên tắc trình bày thông tin khoa học.
-
-Dưới đây là phiên bản được biên soạn lại, tập trung vào việc tối ưu hóa sự rõ ràng, chi tiết, tính khoa học, độ chính xác và sức hấp dẫn:
-
----
-
 # **Lớp học Chuyên sâu về AWS Billing và Quản lý Chi phí: Từ Nền tảng đến Chiến lược Làm chủ**
 
 Chào mừng quý vị đến với chương trình đào tạo chuyên sâu này. Tôi là một Kiến trúc sư Giải pháp Tài chính Đám mây Cấp cao tại AWS. Trong nhiều năm, tôi đã nghiên cứu và làm việc mật thiết với hệ thống AWS Billing, các dịch vụ Quản lý Chi phí, đồng thời hỗ trợ nhiều khách hàng lớn nhất của chúng tôi trên hành trình tối ưu hóa chi tiêu trên nền tảng đám mây. Mục tiêu của tôi hôm nay không chỉ dừng lại ở việc cung cấp thông tin, mà còn là trang bị cho quý vị một sự thấu hiểu sâu sắc và tư duy chiến lược cần thiết để thực sự làm chủ khía cạnh tài chính then chốt của AWS.
