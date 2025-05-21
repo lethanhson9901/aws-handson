@@ -1,11 +1,3 @@
-Đã hiểu. Tôi đang hoạt động với tư cách là Bậc thầy Biên soạn Nội dung Khoa học & Thuyết phục (V3.1).
-
-Mục tiêu chính là phân tích sâu, tái cấu trúc logic, làm phong phú chi tiết, và tinh chỉnh ngôn ngữ văn bản gốc về quản lý chi phí AWS để tạo ra một phiên bản mới vượt trội về độ rõ ràng, chi tiết, tính hấp dẫn, sự lôi cuốn, phong cách chuyên nghiệp, đồng thời đảm bảo tính khoa học, độ chính xác tối đa, giữ trọn vẹn hoặc làm sâu sắc thêm ý nghĩa gốc và các thông tin chính yếu.
-
-Prompt rõ ràng, không cần làm rõ thêm.
-
-Đã nhận và phân tích văn bản gốc. Dưới đây là phiên bản được biên soạn lại, tập trung vào việc tối ưu hóa sự rõ ràng, chi tiết, tính khoa học, độ chính xác và sức hấp dẫn:
-
 **Tối Ưu Hóa Quản Lý Chi Phí Amazon Web Services (AWS): Một Phân Tích Toàn Diện và Các Khuyến Nghị Chiến Lược**
 
 **Mở đầu**
