@@ -1,49 +1,42 @@
-**So Sánh Devin và Agent Cursor: Khám Phá Sự Khác Biệt Giữa Hai Công Cụ AI**
+Đã nhận và phân tích văn bản gốc. Dưới đây là phiên bản được biên soạn lại, tối ưu hóa sự rõ ràng, chi tiết, tính khoa học, độ chính xác và sức hấp dẫn:
+
+---
+
+**Devin và Agent Cursor: Cuộc Đối Đầu Giữa Hai Công Cụ AI Đỉnh Cao**
 
 Ngày 12 tháng 12 năm 2024, bởi grapeot | 2 Bình luận
 
-Bài viết này nằm trong loạt bài "Hiểu và Triển khai AI Tác Nhân":
+Trong thế giới công nghệ đang phát triển chóng mặt, việc lựa chọn công cụ AI phù hợp có thể quyết định thành bại của dự án. Bài viết này nằm trong loạt bài "Hiểu và Triển khai AI Tác Nhân", nơi chúng ta sẽ khám phá sự khác biệt giữa Devin và Agent Cursor - hai công cụ AI hàng đầu hiện nay.
 
-1. So Sánh Devin và Agent Cursor (Bài viết này)
-2. Từ Người Suy Nghĩ Đến Người Thực Hiện — Cuộc Cách Mạng Tư Duy và Kiến Trúc Kỹ Thuật của AI Tác Nhân
-3. Biến $20 thành $500 - Chuyển Đổi Cursor thành Devin Trong Một Giờ
-4. Sử Dụng Cursor Như Một Điểm Khởi Đầu Toàn Diện Cho AI
+### Devin vs Agent Cursor: Ai Mới Thực Sự Là Trợ Thủ Đắc Lực?
 
-Gần đây, tôi đã đăng ký sử dụng Devin, một công cụ lập trình AI với mức phí $500 mỗi tháng. Nó tự quảng cáo là một thực tập sinh đa năng có thể thực hiện nhiều nhiệm vụ mà các công cụ AI truyền thống như Cursor và Windsurf không thể xử lý. Sau một thời gian trải nghiệm, tôi nhận thấy những khác biệt đáng kể giữa Devin và Cursor về triết lý thiết kế và trải nghiệm người dùng, điều mà tôi sẽ tóm tắt trong bài viết này.
+Gần đây, tôi đã thử nghiệm Devin, một công cụ lập trình AI với mức phí $500 mỗi tháng. Devin tự hào là một thực tập sinh đa năng có khả năng xử lý nhiều nhiệm vụ mà các công cụ AI truyền thống như Cursor không thể thực hiện. Sau một thời gian sử dụng, tôi nhận ra những khác biệt đáng kể giữa Devin và Cursor về triết lý thiết kế và trải nghiệm người dùng.
 
-Trước tiên, cần lưu ý rằng khi đề cập đến Cursor, tôi không nói về các công cụ tự động hoàn thành truyền thống như Copilot hay các công cụ lập trình ngôn ngữ tự nhiên như Copilot Chat. Thay vào đó, tôi đang nói về chế độ Agent mới được phát hành của Cursor. Trong Cursor Composer, bạn có thể chuyển từ chế độ Bình Thường sang chế độ Agent, nơi bạn có thể đưa ra yêu cầu và Cursor sẽ hoàn thành nhiệm vụ theo từng vòng bằng cách gọi nhiều công cụ khác nhau. Trải nghiệm này rất giống với Windsurf, vì vậy Agent Cursor ở đây đại diện cho một dạng sản phẩm tiên tiến hoàn thành nhiệm vụ qua nhiều vòng bằng cách gọi các công cụ trên máy tính của bạn theo kiểu tác nhân.
+**Triết Lý Thiết Kế: Từ Thi Hành Cục Bộ Đến Lập Kế Hoạch Toàn Cầu**
 
-### Triết Lý Thiết Kế: Thi Hành Cục Bộ So Với Lập Kế Hoạch Toàn Cầu
+Cursor hoạt động như một kỹ thuật viên chăm chỉ: bạn đưa ra yêu cầu rõ ràng, nó thực hiện nhanh chóng và trả kết quả ngay lập tức. Tuy nhiên, Devin lại mang dáng dấp của một hệ thống phức tạp hơn, giống như một thực tập sinh thông minh. Nó không chỉ đơn giản thực hiện nhiệm vụ mà còn lập kế hoạch tổng thể trước khi chia nhỏ các bước để thực thi và kiểm tra kết quả.
 
-Một trong những quan sát nổi bật nhất của tôi là triết lý thiết kế của Devin khác biệt rõ rệt so với Agent Cursor. Tương tác với Cursor giống như làm việc với một công cụ hơn, trong khi Devin lại giống như làm việc với một con người hơn.
+Sự khác biệt này giúp Devin có khả năng hoàn thành những nhiệm vụ phức tạp hơn với cách tiếp cận hệ thống hóa. Khi thử nghiệm cả hai công cụ trong việc sao chép một trang web, Devin nổi bật với khả năng tư duy trừu tượng và lập kế hoạch cấp cao. Trong khi đó, Cursor gặp khó khăn với các dự án phức tạp vì thiết kế của nó không dành cho những nhiệm vụ đòi hỏi sự tư duy sâu rộng.
 
-**Thi Hành Cục Bộ vs Lập Kế Hoạch Toàn Cầu: Từ Hoàn Thành Nhiệm Vụ Đến Lập Kế Hoạch Quy Trình**
+**Linh Hoạt Trong Sử Dụng Công Cụ**
 
-Khi sử dụng Cursor, tôi cảm giác rõ ràng rằng nó giống như một kỹ thuật viên chỉ thực hiện các nhiệm vụ cụ thể. Bạn chỉ cần đưa ra hướng dẫn rõ ràng và nó sẽ nhanh chóng thực hiện để đưa ra kết quả. Ngược lại, Devin giống như một hệ thống phức tạp có phương pháp hơn hoặc một thực tập sinh. Nó có tư duy quy trình hoàn thiện hơn: đầu tiên phát triển kế hoạch cấp cao rồi chia nhỏ các bước để thực hiện và xác minh kết quả.
+Khả năng linh hoạt trong sử dụng công cụ cũng là điểm khác biệt lớn giữa hai sản phẩm này. Cursor chủ yếu giới hạn ở hệ thống file và tạo mã lệnh, nhưng Devin có thể mở trình duyệt web, sử dụng khả năng hình ảnh để hiểu nội dung giao diện người dùng phía trước cũng như thực hiện kiểm tra tương tác tự động.
 
-Mặc dù cả Devin và Cursor đều có khả năng lặp lại nhiều lần nhưng sự lặp lại của Cursor chỉ nhằm kiểm tra để xác minh hoàn thành mục tiêu. Trong khi đó, Devin hoạt động như một chuyên gia dày dạn kinh nghiệm: đầu tiên liệt kê kế hoạch cấp cao rồi lần lượt kiểm tra từng mục tiêu nhỏ hơn, liên tục điều chỉnh chiến lược trong quá trình này đồng thời thông báo tiến độ cho bạn biết để bạn yên tâm rằng toàn bộ dự án đang được kiểm soát.
+Một ví dụ điển hình là khi tôi cần sửa lỗi liên kết trên blog của mình. Các lỗi này không theo quy luật nào rõ ràng khiến Cursor gặp khó khăn. Ngược lại, Devin đã giải quyết vấn đề này mà không cần dùng đến lập trình bằng cách mở từng file một để tìm kiếm và sửa lỗi.
 
-Điều này tạo ra sự khác biệt thú vị giúp Devin có khả năng hoàn thành các nhiệm vụ phức tạp hơn cũng như biến đổi đa dạng hơn để cung cấp giải pháp hệ thống hóa tốt hơn.
+Tuy nhiên, sự linh hoạt này đôi khi cũng gây phiền toái. Khi yêu cầu tải về thông tin từ trang CVPR với 2000 bài báo khoa học, Cursor nhanh chóng viết chương trình crawler để xử lý dữ liệu hàng loạt. Trong khi đó, Devin chọn con đường thủ công hơn bằng cách đọc từng trang một qua trình duyệt - vừa hài hước vừa gây chút thất vọng.
 
-### Linh Hoạt Trong Sử Dụng Công Cụ
+**Phát Triển Động Các Prompt Và Kiến Thức**
 
-Sự khác biệt thứ hai giữa chúng nằm ở mức độ linh hoạt trong sử dụng công cụ. Khả năng chính của Agent Cursor chủ yếu giới hạn ở hệ thống file, tạo mã lệnh và thi hành câu lệnh. Tuy nhiên, Devin có thể sử dụng nhiều công cụ hơn như mở trình duyệt web hay dùng khả năng hình ảnh để hiểu nội dung giao diện người dùng phía trước cũng như thực hiện kiểm tra tương tác tự động.
+Một điểm mạnh của Devin là khả năng quản lý kiến thức động. Khi gặp phải vấn đề mới hoặc nhận được phản hồi từ người dùng, nó tự động cập nhật kiến thức để tránh mắc lại lỗi cũ trong tương lai.
 
-Devin còn có thể tự gọi mô hình ngôn ngữ lớn (LLM) của mình (tương đương với bộ não của một thực tập sinh?) để hoàn thành những nhiệm vụ độc lập linh hoạt hơn.
+Ví dụ như sau khi tôi góp ý về cách crawl dữ liệu từ CVPR, Devin đã ghi nhớ rằng lần sau cần xử lý tình huống khác nhau dựa trên quy mô dữ liệu - điều mà hiện tại Cursor chưa làm được nhưng có tiềm năng phát triển trong tương lai.
 
-### Phát Triển Động Các Prompt Và Kiến Thức
+### Kết Luận: Chọn Công Cụ Phù Hợp Cho Nhu Cầu Của Bạn
 
-Một điểm khác biệt liên quan nữa là quản lý kiến thức và sự phát triển động của chúng.
+Tóm lại, nếu bạn đang tìm kiếm một trợ thủ đắc lực cho các dự án phần mềm phức tạp thì Devin là lựa chọn hoàn hảo dù chi phí cao hơn nhiều so với Cursor. Nhưng nếu bạn chỉ cần giải quyết các nhiệm vụ nhỏ gọn hàng ngày nhanh chóng thì hãy chọn Cursor - tiện lợi hơn rất nhiều!
 
-Khi sử dụng Devin, nó rất chú trọng vào việc tổng kết kinh nghiệm và tích lũy kiến thức. Ví dụ như trong trường hợp thu thập dữ liệu từ trang CVPR đã đề cập ở trên; sau khi nhận phản hồi từ tôi rằng "cần phải kiểm tra số lượng bài viết trước nếu quá nhiều thì cần chọn giải pháp xử lý hàng loạt bằng chương trình", nó tự động tạo ra mục kiến thức mới ghi nhớ rằng lần sau khi crawl web cần xử lý tình huống khác nhau dựa trên quy mô dữ liệu.
-
-### Kiểm Soát Và Bối Cảnh Sử Dụng
-
-Vì ba điểm khác biệt về thiết kế cũng như sản phẩm này mà tôi có ấn tượng rất rõ ràng: Devin được thiết kế giống con người - phương pháp luận nhưng khó đoán định cao hơn; đôi khi nó nhìn chằm chằm vào file Markdown suốt mười phút khiến tôi tự hỏi liệu nó đang bí mật chơi điện thoại phía sau không!
-
-Nhưng đồng thời cũng giỏi xử lý dự án phức tạp hơn hẳn so với đối thủ cạnh tranh trực tiếp là ChatGPT; tức là nếu bạn muốn không phải mã nguồn mà là sản phẩm cuối cùng - chẳng hạn biểu tượng hay tài liệu thậm chí hình ảnh Photoshop thì hãy dùng Cursor thay vì phải mất hàng giờ đồng hồ cho dự án nhỏ cùng chi phí $500/tháng từ phía đối thủ cạnh tranh trực tiếp ChatGPT!
-
-Tôi sẽ tiếp tục khám phá xem liệu còn cách nào thú vị để tận dụng tối đa tiềm năng từ hai công cụ hữu ích này nhằm mang lại tiện ích tối ưu hóa cuộc sống hàng ngày!
+Tôi sẽ tiếp tục khám phá thêm về hai công cụ tuyệt vời này để tìm ra cách tận dụng tối đa tiềm năng của chúng trong cuộc sống hàng ngày!
 
 --- 
 Nguồn: https://yage.ai/devin-vs-agent-cursor-en.html
