@@ -1,6 +1,135 @@
 
 **Làm chủ Quản lý Truy cập và Định danh AWS: Hướng dẫn Toàn diện**
 
+```mermaid
+graph TB
+    %% Styling
+    classDef entity fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    classDef policy fill:#27AE60,stroke:#1E7E34,stroke-width:2px,color:#fff
+    classDef process fill:#E67E22,stroke:#A0522D,stroke-width:2px,color:#fff
+    classDef security fill:#E74C3C,stroke:#8B0000,stroke-width:2px,color:#fff
+    classDef external fill:#9B59B6,stroke:#6B3AA0,stroke-width:2px,color:#fff
+
+    %% Main Title
+    subgraph AWS_IAM["🔐 AWS Identity and Access Management (IAM)"]
+        
+        %% Core Entities Section
+        subgraph Entities["IAM Entities"]
+            Root["Root User<br/>• Full access<br/>• Use MFA<br/>• Minimal usage"]:::security
+            Users["IAM Users<br/>• Human identities<br/>• Long-term credentials<br/>• Console/API access"]:::entity
+            Groups["IAM Groups<br/>• User collections<br/>• Shared permissions<br/>• No nesting"]:::entity
+            Roles["IAM Roles<br/>• Temporary credentials<br/>• Cross-account access<br/>• Service permissions"]:::entity
+            
+            Root -->|Creates| Users
+            Users -->|Member of| Groups
+            Users -->|Can assume| Roles
+        end
+
+        %% Authentication Section
+        subgraph Auth["Authentication Layer"]
+            Creds["Credentials<br/>• Passwords<br/>• Access Keys<br/>• MFA tokens"]:::process
+            AuthProcess["Authentication<br/>Process"]:::process
+            SessionToken["Session Token<br/>• Temporary<br/>• Time-limited"]:::process
+            
+            Creds -->|Validates| AuthProcess
+            AuthProcess -->|Generates| SessionToken
+        end
+
+        %% Policy Section
+        subgraph Policies["Policy Framework"]
+            PolicyTypes["Policy Types"]:::policy
+            Managed["AWS Managed<br/>• Pre-built<br/>• Best practices<br/>• Auto-updated"]:::policy
+            Customer["Customer Managed<br/>• Custom logic<br/>• Reusable<br/>• Version control"]:::policy
+            Inline["Inline Policies<br/>• One-to-one<br/>• Entity specific<br/>• Not reusable"]:::policy
+            
+            PolicyTypes --> Managed
+            PolicyTypes --> Customer
+            PolicyTypes --> Inline
+            
+            PermBoundary["Permission Boundaries<br/>• Maximum permissions<br/>• Delegation control"]:::security
+            SCP["Service Control Policies<br/>• Organization-wide<br/>• Preventive controls"]:::security
+        end
+
+        %% Policy Evaluation
+        subgraph Evaluation["Policy Evaluation Logic"]
+            Request["API Request"]:::process
+            Deny["Explicit Deny?"]:::process
+            Allow["Explicit Allow?"]:::process
+            SCPCheck["SCP Allow?"]:::process
+            PermCheck["Within Permission<br/>Boundary?"]:::process
+            Final["Final Decision"]:::process
+            
+            Request --> Deny
+            Deny -->|No| SCPCheck
+            Deny -->|Yes| Final
+            SCPCheck -->|Yes| Allow
+            SCPCheck -->|No| Final
+            Allow -->|Yes| PermCheck
+            Allow -->|No| Final
+            PermCheck -->|Yes| Final
+            PermCheck -->|No| Final
+        end
+
+        %% Role Assumption Flow
+        subgraph AssumeRole["Role Assumption Flow"]
+            Principal["Principal<br/>(User/Service)"]:::entity
+            TrustPolicy["Trust Policy<br/>Evaluation"]:::policy
+            STSCall["STS AssumeRole<br/>API Call"]:::process
+            TempCreds["Temporary<br/>Credentials"]:::process
+            
+            Principal -->|Requests| STSCall
+            STSCall -->|Checks| TrustPolicy
+            TrustPolicy -->|Allows| TempCreds
+            TempCreds -->|Valid for| Duration["Duration<br/>• 15 min - 12 hrs<br/>• Default: 1 hr"]:::process
+        end
+
+        %% External Integration
+        subgraph External["External Integration"]
+            SAML["SAML 2.0<br/>Identity Provider"]:::external
+            OIDC["OpenID Connect<br/>Provider"]:::external
+            Federation["Federation<br/>Endpoint"]:::process
+            
+            SAML --> Federation
+            OIDC --> Federation
+            Federation -->|Maps to| Roles
+        end
+
+        %% Best Practices
+        subgraph BestPractices["Security Best Practices"]
+            LeastPriv["Least Privilege<br/>• Minimal permissions<br/>• Regular reviews"]:::security
+            MFA["Multi-Factor Auth<br/>• Required for root<br/>• Recommended for users"]:::security
+            Rotation["Credential Rotation<br/>• Access keys: 90 days<br/>• Passwords: Policy-based"]:::security
+            Monitoring["Monitoring<br/>• CloudTrail logs<br/>• Access Analyzer<br/>• Unused credentials"]:::security
+        end
+
+        %% Connections between sections
+        Users -.->|Authenticate with| Creds
+        Groups -.->|Attach| PolicyTypes
+        Users -.->|Attach| PolicyTypes
+        Roles -.->|Attach| PolicyTypes
+        Roles -.->|Define trust with| TrustPolicy
+        
+        SessionToken -.->|Used in| Request
+        PolicyTypes -.->|Evaluated in| Evaluation
+        PermBoundary -.->|Limits| PermCheck
+        SCP -.->|Enforced in| SCPCheck
+        
+        External -.->|Provides| Principal
+        BestPractices -.->|Applies to| Entities
+        Monitoring -.->|Tracks| Auth
+        Monitoring -.->|Audits| Evaluation
+    end
+
+    %% Legend
+    subgraph Legend["Legend"]
+        L1["Blue: IAM Entities"]:::entity
+        L2["Green: Policies"]:::policy
+        L3["Orange: Processes"]:::process
+        L4["Red: Security Controls"]:::security
+        L5["Purple: External Systems"]:::external
+    end
+```
+
 **1. Giới thiệu: Vai trò Không thể Thiếu của IAM trong Bảo mật Đám mây**
 
 Trong kiến trúc đám mây hiện đại, Quản lý Truy cập và Định danh (IAM) không chỉ đơn thuần là một tính năng mà đã trở thành nền tảng bảo mật cốt lõi của mọi môi trường Amazon Web Services (AWS). IAM đóng vai trò như một hệ thống kiểm soát truy cập trung tâm cho AWS, chịu trách nhiệm xác thực (ai đang đăng nhập?) và ủy quyền (ai được làm gì?) cho cả người dùng và dịch vụ.¹ Mục tiêu chính của IAM là thực thi **nguyên tắc đặc quyền tối thiểu**, đảm bảo mỗi định danh (người dùng hoặc dịch vụ) chỉ sở hữu những quyền hạn thực sự cần thiết để hoàn thành nhiệm vụ, không hơn không kém.¹ IAM hoạt động như người gác cổng, nơi các tổ chức định rõ ai (định danh) có thể thực hiện hành động gì trên tài nguyên nào, và trong những điều kiện cụ thể nào.² Bất kỳ cấu hình sai sót nào trong IAM đều có thể dẫn đến những hậu quả bảo mật nghiêm trọng và tức thời.
